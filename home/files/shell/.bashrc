@@ -9,11 +9,10 @@ shopt -s expand_aliases
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='\e[0;34m󰣇  \u \W >\e[0m '
+PS1='\e[0;34m󱄅  \u \W >\e[0m '
 
-# Graphics
-export WLR_RENDERER=vulcan
-export LIBVA_DRIVER_NAME=v3d
+# Specialisation aliases
+source ~/.config/specialisation_aliases.sh
 
 # ---------------------------------------------------------------
 # User Aliases
@@ -21,17 +20,15 @@ export LIBVA_DRIVER_NAME=v3d
 
 # Standard
 alias ll="ls -la"
-alias bashrc="vim ~/.bashrc && source ~/.bashrc"
-alias vimrc="vim ~/.vimrc"
-alias repo="cd /opt/repos"
-alias rh="cd /opt/repos/hyprland"
+alias bashrc="vim ~/nix-config/home/files/shell/.bashrc && source ~/.bashrc"
+alias vimrc="vim ~/nix-config/home/files/shell/.vimrc"
+alias repo="cd ~/nix-config"
 alias fetch="clear && fastfetch"
 
 # Config
-alias ch="vim ~/.config/hypr/hyprland.conf"
-alias cw="vim ~/.config/waybar/config.jsonc"
-alias cws="vim ~/.config/waybar/style.css"
-alias ck="vim ~/.config/kitty/kitty.conf"
+alias ch="vim ~/nix-config/home/files/hypr/hyprland.conf"
+alias cw="vim ~/nix-config/home/files/waybar/config.jsonc"
+alias cws="vim ~/nix-config/home/files/waybar/style.css"
 
 # Ascii Aliases
 alias dwight="~/.config/asciiArt/asciiArt.sh dwight"

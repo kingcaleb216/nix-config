@@ -61,8 +61,8 @@ let
 in
 {
   home.file = {
-    ".config/kitty/colors.conf".source = kittyColors;
-    ".config/hypr/colors.conf".source = hyprColors;
-    ".config/waybar/colors.css".source = waybarColors;
+    ".config/palette/kitty/colors.conf".source = kittyColors;
+    ".config/palette/hypr/colors.conf".source = hyprColors;
+    ".config/palette/waybar/colors.css".source = waybarColors;
   };
 }

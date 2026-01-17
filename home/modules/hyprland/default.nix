@@ -1,26 +1,11 @@
 { config, pkgs, ... }:
 {
-  home.file = {
-    ".config/hypr/hyprland.conf".source = ../../files/hypr/hyprland.conf;
+  xdg.configFile."hypr".source =
+    config.lib.file.mkOutOfStoreSymlink "/home/caleb/nix-config/home/files/hypr";
 
-    ".config/hypr/initLayout.sh" = {
-      source = ../../files/hypr/initLayout.sh;
-      executable = true;
-    };
-    ".config/hypr/clearWorkspace.sh" = {
-      source = ../../files/hypr/clearWorkspace.sh;
-      executable = true;
-    };
-    ".config/hypr/toggleTerminal.sh" = {
-      source = ../../files/hypr/toggleTerminal.sh;
-      executable = true;
-    };
+  xdg.configFile."wallpaper".source =
+    config.lib.file.mkOutOfStoreSymlink "/home/caleb/nix-config/home/files/wallpaper";
 
-    # Wallpaper placeholder (drop your image at this path)
-    ".config/wallpaper/README.txt".source = ../../files/wallpaper/README.txt;
-  };
-
-  # Nice-to-have Hyprland utilities
   home.packages = with pkgs; [
     hyprland
     swww

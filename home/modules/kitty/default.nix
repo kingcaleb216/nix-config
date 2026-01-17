@@ -1,7 +1,13 @@
 { config, pkgs, ... }:
 {
-  programs.kitty.enable = true;
+  programs.kitty = {
+  enable = true;
 
-  # Keep your kitty.conf as a real file (not inlined)
-  home.file.".config/kitty/kitty.conf".source = ../../files/kitty/kitty.conf;
+  extraConfig = ''
+    include ../palette/kitty/colors.conf
+    background_opacity 0.8
+    allow_remote_control yes
+    confirm_os_window_close 0
+  '';
+  };
 }

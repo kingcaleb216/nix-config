@@ -5,6 +5,6 @@ in
 {
   home.packages = with pkgs; [ waybar jq updateScript ];
 
-  home.file.".config/waybar/config.jsonc".source = ../../files/waybar/config.jsonc;
-  home.file.".config/waybar/style.css".source = ../../files/waybar/style.css;
+  xdg.configFile."waybar".source =
+    config.lib.file.mkOutOfStoreSymlink "/home/caleb/nix-config/home/files/waybar";
 }

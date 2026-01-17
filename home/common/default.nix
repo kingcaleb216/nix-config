@@ -7,8 +7,15 @@
 
   imports = [
     ../modules/shell
-    ../modules/theme
-    ../modules/ascii
+    ../modules/palette
+    ../modules/asciiArt
     ../modules/kitty
   ];
+
+  # Cursor
+  home.pointerCursor = {
+     name = "Bibata-Modern-Ice";
+     size = 26;
+     package = pkgs.bibata-cursors;
+  };
 }

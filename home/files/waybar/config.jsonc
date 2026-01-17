@@ -49,7 +49,7 @@
     },
     "custom/packages": {
         "format": "{} ",
-        "exec": "~/.local/bin/nixpkgs-update-count",
+        "exec": "nixpkgs-update-count",
         "interval": 60
     },
     "custom/calendar": {

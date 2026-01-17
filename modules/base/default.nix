@@ -9,7 +9,11 @@
 
   # Boot
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 2;
   boot.loader.efi.canTouchEfiVariables = true;
+
+  # Kernel
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Networking
   networking.networkmanager.enable = true;
@@ -38,6 +42,7 @@
     btop
     htop
     bat
+    home-manager
   ];
 
   # Audio (Wayland-friendly)
@@ -59,4 +64,7 @@
   nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "24.11"; # set once at install time
+
+  # Do not prompt for password using sudo
+  security.sudo.wheelNeedsPassword = false;
 }

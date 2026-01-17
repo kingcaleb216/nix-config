@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
-  home.packages = with pkgs; [ rofi-wayland ];
+  home.packages = with pkgs; [ rofi ];
 
-  home.file.".config/rofi/config.rasi".source = ../../files/rofi/config.rasi;
-  home.file.".config/rofi/theme.rasi".source = ../../files/rofi/theme.rasi;
+  xdg.configFile."rofi".source =
+  config.lib.file.mkOutOfStoreSymlink "/home/caleb/nix-config/home/files/rofi";
 }
