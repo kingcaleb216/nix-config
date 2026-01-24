@@ -10,6 +10,7 @@
     ../modules/palette
     ../modules/asciiArt
     ../modules/kitty
+    ../modules/apps
   ];
 
   # Cursor
