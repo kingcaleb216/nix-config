@@ -49,7 +49,6 @@ Hyprland runs:
 - Your old Arch `applyPalette.sh` flow has been replaced by a **native Nix palette** that generates:
   - `~/.config/hypr/colors.conf`
   - `~/.config/kitty/colors.conf`
-  - `~/.config/waybar/colors.css`
 
-- Waybar "package updates" has been mapped to Nix: it shows **1** when your `nixpkgs` input is behind upstream.
+- Hyprpanel "package updates" has been mapped to Nix: it shows **1** when your `nixpkgs` input is behind upstream.
   (We can later make it show a richer status if you want.)

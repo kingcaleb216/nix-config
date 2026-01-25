@@ -2,7 +2,7 @@
 {
   imports = [
     ../../modules/hyprland
-    ../../modules/waybar
+    ../../modules/hyprpanel
     ../../modules/rofi
   ];
 
@@ -12,8 +12,7 @@
   xdg.configFile."specialisation_aliases.sh".text = ''
     # Hyprland specialisation
     alias ch="vim ~/nix-config/home/files/hypr/hyprland.conf"
-    alias cw="vim ~/nix-config/home/files/waybar/config.jsonc"
-    alias cws="vim ~/nix-config/home/files/waybar/style.css"
+    alias cp="vim ~/nix-config/home/files/hyprpanel/config.json"
     alias ck="vim ~/nix-config/home/files/kitty/kitty.conf"
     alias rebuild="sudo nixos-rebuild switch --flake /home/caleb/nix-config#k1 --specialisation hyprland";
   '';

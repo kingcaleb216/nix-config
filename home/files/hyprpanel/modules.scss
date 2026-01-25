@@ -1,0 +1,9 @@
+/* Custom module styling */
+@include styleModule('cmodule-kernel', (
+  'text-color': #b3626e
+));
+
+@include styleModule('cmodule-packages', (
+  'text-color': #4c8a8a
+));
+

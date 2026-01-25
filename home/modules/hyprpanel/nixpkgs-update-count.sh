@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Prints "1" if your nixpkgs input is behind upstream, else "0".
-# Used by Waybar custom/packages.
+# Used by hyprpanel custom/packages.
 
 flake_dir="${1:-$HOME/nix-config}"
 

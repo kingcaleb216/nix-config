@@ -1,0 +1,32 @@
+{
+  "custom/kernel": {
+    "icon": "",
+    "label": "{} 🧠",
+    "tooltip": "Kernel: {}",
+    "truncationSize": -1,
+    "execute": "uname -r",
+    "interval": 60000,
+    "hideOnEmpty": true,
+    "actions": {
+      "onLeftClick": "",
+      "onRightClick": "",
+      "onMiddleClick": ""
+    }
+  },
+
+  "custom/packages": {
+    "icon": "",
+    "label": "{} 󰏓",
+    "tooltip": "Updates: {}",
+    "truncationSize": -1,
+    "execute": "nixpkgs-update-count",
+    "interval": 60000,
+    "hideOnEmpty": true,
+    "actions": {
+      "onLeftClick": "",
+      "onRightClick": "",
+      "onMiddleClick": ""
+    }
+  }
+}
+

@@ -25,11 +25,6 @@ alias vimrc="vim ~/nix-config/home/files/shell/.vimrc"
 alias repo="cd ~/nix-config"
 alias fetch="clear && fastfetch"
 
-# Config
-alias ch="vim ~/nix-config/home/files/hypr/hyprland.conf"
-alias cw="vim ~/nix-config/home/files/waybar/config.jsonc"
-alias cws="vim ~/nix-config/home/files/waybar/style.css"
-
 # Ascii Aliases
 alias dwight="~/.config/asciiArt/asciiArt.sh dwight"
 alias catbox="~/.config/asciiArt/asciiArt.sh catBox"

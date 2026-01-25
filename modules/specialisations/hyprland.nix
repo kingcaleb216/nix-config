@@ -20,9 +20,10 @@
 
     security.polkit.enable = true;
 
+    services.power-profiles-daemon.enable = true;
+
     environment.systemPackages = with pkgs; [
       kitty
-      waybar
       rofi
       swww
       grim
@@ -36,7 +37,7 @@
       brave
     ];
 
-    # Home Manager layer for Hyprland (configs, scripts, waybar/rofi themes)
+    # Home Manager layer for Hyprland (configs, scripts, hyprpanel/rofi themes)
     home-manager.users.caleb.imports = [ ../../home/specialisations/hyprland ];
   };
 }

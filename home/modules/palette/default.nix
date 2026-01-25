@@ -39,30 +39,10 @@ let
     $light_cyan = 0xee${p.light_cyan}
     $light_white = 0xee${p.light_white}
   '';
-
-  waybarColors = pkgs.writeText "waybar-colors.css" ''
-    @define-color black #${p.black};
-    @define-color red #${p.red};
-    @define-color green #${p.green};
-    @define-color yellow #${p.yellow};
-    @define-color blue #${p.blue};
-    @define-color magenta #${p.magenta};
-    @define-color cyan #${p.cyan};
-    @define-color white #${p.white};
-    @define-color light_black #${p.light_black};
-    @define-color light_red #${p.light_red};
-    @define-color light_green #${p.light_green};
-    @define-color light_yellow #${p.light_yellow};
-    @define-color light_blue #${p.light_blue};
-    @define-color light_magenta #${p.light_magenta};
-    @define-color light_cyan #${p.light_cyan};
-    @define-color light_white #${p.light_white};
-  '';
 in
 {
   home.file = {
     ".config/palette/kitty/colors.conf".source = kittyColors;
     ".config/palette/hypr/colors.conf".source = hyprColors;
-    ".config/palette/waybar/colors.css".source = waybarColors;
   };
 }

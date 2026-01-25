@@ -55,7 +55,7 @@
   };
   security.rtkit.enable = true;
 
-  # Fonts (Waybar icons)
+  # Fonts (Hyprpanel icons)
   fonts.packages = with pkgs; [
     font-awesome
   ];
