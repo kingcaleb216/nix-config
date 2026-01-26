@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
+ 
 let
-  updateScript = pkgs.writeShellScriptBin "nixpkgs-update-count" (builtins.readFile ./nixpkgs-update-count.sh);
+  updateScript = pkgs.writeShellScriptBin "nixpkgs-update-count" (builtins.readFile ../../files/hyprpanel/nixpkgs-update-count.sh);
 in
 {
   home.packages = with pkgs; [

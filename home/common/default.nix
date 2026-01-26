@@ -6,11 +6,7 @@
   home.stateVersion = "24.11";
 
   imports = [
-    ../modules/shell
-    ../modules/palette
-    ../modules/asciiArt
-    ../modules/kitty
-    ../modules/apps
+    ../desktop/common
   ];
 
   # Cursor
