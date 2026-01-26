@@ -3,9 +3,7 @@
     "*": {
       "left": [
         "dashboard",
-        "workspaces",
-        "submap",
-        "media"
+        "workspaces"
       ],
       "middle": [
         "clock"
@@ -259,12 +257,12 @@
   "theme.bar.buttons.windowtitle.icon": "#FFFFFF",
   "theme.bar.buttons.windowtitle.text": "#FFFFFF",
   "theme.bar.buttons.windowtitle.background": "transparent",
-  "theme.bar.buttons.workspaces.active": "#60aaaa",
+  "theme.bar.buttons.workspaces.active": "#6d9e4e",
   "theme.bar.buttons.workspaces.occupied": "#54789f",
   "theme.bar.buttons.workspaces.available": "#bbbbbb",
   "theme.bar.buttons.workspaces.hover": "#444444",
   "theme.bar.buttons.workspaces.background": "transparent",
-  "theme.bar.buttons.dashboard.icon": "#a988aa",
+  "theme.bar.buttons.dashboard.icon": "#4c8a8a",
   "theme.bar.buttons.dashboard.background": "transparent",
   "theme.osd.label": "#FFFFFF",
   "theme.osd.icon": "#000000",
