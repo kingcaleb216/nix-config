@@ -5,6 +5,7 @@
     vscode
     kdePackages.okular
     wl-clipboard
+    tree
   ];
   
 #------------------------------------------
