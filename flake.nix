@@ -19,7 +19,7 @@
         inherit system;
         specialArgs = { inherit self nixpkgs home-manager hostName; };
         modules = [
-          ./hosts/${hostName}
+          ./system/hosts/${hostName}
 
           home-manager.nixosModules.home-manager
           ({ config, ... }: {

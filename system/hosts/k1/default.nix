@@ -3,8 +3,8 @@
   imports = [
     ../../modules/base
     ../../modules/hardware/k1.nix
-    ../../modules/specialisations/hyprland.nix
-    ../../modules/specialisations/kde.nix
+    ../../specialisations/hyprland.nix
+    ../../specialisations/kde.nix
 
     # During install, generate and commit this file:
     #   sudo nixos-generate-config --root /mnt
