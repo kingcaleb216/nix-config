@@ -23,6 +23,7 @@
     services.power-profiles-daemon.enable = true;
 
     environment.systemPackages = with pkgs; [
+      hyprland
       kitty
       rofi
       swww
@@ -38,6 +39,6 @@
     ];
 
     # Home Manager layer for Hyprland (configs, scripts, hyprpanel/rofi themes)
-    home-manager.users.caleb.imports = [ ../../home/specialisations/hyprland ];
+    home-manager.users.caleb.imports = [ ../../home/modules/hyprland ];
   };
 }

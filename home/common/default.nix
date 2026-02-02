@@ -17,8 +17,6 @@
     orca-slicer
     vscode
     kdePackages.okular
-    wl-clipboard
-    tree
   ];
   
 #------------------------------------------

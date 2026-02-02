@@ -12,6 +12,6 @@
     ];
 
     # Home Manager layer for KDE (minimal for now)
-    home-manager.users.caleb.imports = [ ../../home/specialisations/kde ];
+    home-manager.users.caleb.imports = [ ../../home/modules/kde ];
   };
 }

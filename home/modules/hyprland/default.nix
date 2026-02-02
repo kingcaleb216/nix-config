@@ -8,19 +8,6 @@
     ./rofi.nix
   ];
 
-  home.packages = with pkgs; [
-    hyprland
-    swww
-    grim
-    slurp
-    wl-clipboard
-    mako
-    pavucontrol
-    thunar
-    tumbler
-    gvfs
-  ];
-
   xdg.configFile."hypr".source =
     config.lib.file.mkOutOfStoreSymlink "/home/caleb/nix-config/home/files/hypr";
 

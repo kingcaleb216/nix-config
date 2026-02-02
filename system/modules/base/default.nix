@@ -30,7 +30,6 @@
   environment.systemPackages = with pkgs; [
     git
     vim
-    nano
     jq
     bc
     tldr
@@ -42,6 +41,7 @@
     btop
     htop
     bat
+    tree
     home-manager
   ];
 
