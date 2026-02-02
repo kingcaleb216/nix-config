@@ -5,14 +5,29 @@
 
   home.stateVersion = "24.11";
 
-  imports = [
-    ../desktop/common
-  ];
-
   # Cursor
   home.pointerCursor = {
      name = "Bibata-Modern-Ice";
      size = 26;
      package = pkgs.bibata-cursors;
   };
+
+  # Common packages
+  home.packages = with pkgs; [
+    orca-slicer
+    vscode
+    kdePackages.okular
+    wl-clipboard
+    tree
+  ];
+  
+#------------------------------------------
+# Shell Config
+#------------------------------------------
+
+  home.file.".bashrc".source =
+  config.lib.file.mkOutOfStoreSymlink "/home/caleb/nix-config/home/files/shell/.bashrc";
+
+  home.file.".vimrc".source =
+  config.lib.file.mkOutOfStoreSymlink "/home/caleb/nix-config/home/files/shell/.vimrc";
 }
