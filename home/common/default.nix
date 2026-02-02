@@ -17,6 +17,7 @@
     orca-slicer
     vscode
     kdePackages.okular
+    obsidian
   ];
   
 #------------------------------------------
