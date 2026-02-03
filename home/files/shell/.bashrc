@@ -22,8 +22,12 @@ source ~/.config/specialisation_aliases.sh
 alias ll="ls -la"
 alias bashrc="vim ~/nix-config/home/files/shell/.bashrc && source ~/.bashrc"
 alias vimrc="vim ~/nix-config/home/files/shell/.vimrc"
-alias repo="cd ~/nix-config"
 alias fetch="clear && fastfetch"
+alias g="grep -rnIi"
+alias f="find | grep"
+alias r="cd ~/nix-config"
+alias rh="cd ~/nix-config/home"
+alias rs="cd ~/nix-config/system"
 
 # Ascii Aliases
 alias dwight="~/.config/asciiArt/asciiArt.sh dwight"

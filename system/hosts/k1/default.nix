@@ -1,16 +1,21 @@
 { config, pkgs, ... }:
 {
   imports = [
-    ../../modules/base
-    ../../modules/hardware/k1.nix
-    ../../specialisations/hyprland.nix
-    ../../specialisations/kde.nix
+    ../../modules/common.nix
+    ../../modules/hyprland.nix
+    ../../modules/kde.nix
 
-    # During install, generate and commit this file:
-    #   sudo nixos-generate-config --root /mnt
-    #   cp /mnt/etc/nixos/hardware-configuration.nix ./hosts/k1/hardware-configuration.nix
     ./hardware-configuration.nix
   ];
 
   networking.hostName = "k1";
+
+  # AMD CPU microcode
+  hardware.cpu.amd.updateMicrocode = true;
+
+  # Graphics stack
+  hardware.graphics.enable = true;
+
+  # Laptop default enabled for mini PC
+  services.fstrim.enable = true;
 }

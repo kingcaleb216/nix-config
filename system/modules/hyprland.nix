@@ -39,6 +39,6 @@
     ];
 
     # Home Manager layer for Hyprland (configs, scripts, hyprpanel/rofi themes)
-    home-manager.users.caleb.imports = [ ../../home/modules/hyprland ];
+    home-manager.users.caleb.imports = [ ../../home/modules/hyprland/hyprland.nix ];
   };
 }

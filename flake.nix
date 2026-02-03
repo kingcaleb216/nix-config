@@ -25,7 +25,7 @@
           ({ config, ... }: {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.caleb = import ./home/common;
+            home-manager.users.caleb = import ./home/modules/common.nix;
           })
         ];
       };
