@@ -413,5 +413,5 @@
   "bar.launcher.icon": "",
   "bar.workspaces.show_numbered": true,
   "bar.workspaces.numbered_active_indicator": "color",
-  "bar.workspaces.workspaces": 4
+  "bar.workspaces.workspaces": 8
 }

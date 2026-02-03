@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
+# Get current workspace
+workspace=$(hyprctl activeworkspace -j | jq -r '.id')
+
 function dashboard()
 {
-   workspace=$1
-
    hyprctl dispatch workspace $workspace
    sleep 0.2
    
@@ -23,13 +24,32 @@ function dashboard()
    sleep 0.5
 }
 
-# If dashboard flag is set
+function clearWorkspace()
+{
+   clients=$(hyprctl clients -j | jq -r \
+      ".[] | select(.workspace.id == $workspace) | .address")
+
+   for addr in $clients; do
+       hyprctl dispatch killwindow address:$addr
+   done
+}
+
+# If setting terminal dashboard on current workspace
 if [[ $1 == -d ]]
 then
    # Reset current workspace to dashboard
-   ~/.config/hypr/clearWorkspace.sh
-   dashboard $(hyprctl activeworkspace -j | jq -r '.id')
-else
+   clearWorkspace
+   dashboard $workspace
+
+# If clearing current workspace
+elif [[ $1 == -c ]]
+then
+   # Clear workspace
+   clearWorkspace $workspace
+
+# If initializing first two workspaces
+elif [[ $1 == -i ]]
+then
    # Workspace 1 setup
    dashboard 1
    
